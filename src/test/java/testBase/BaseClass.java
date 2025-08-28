@@ -117,19 +117,18 @@ public class BaseClass {
 	public String captureScreen(String method) 
 	{
 		
+		TakesScreenshot tc = (TakesScreenshot) driver;
+		File source = tc.getScreenshotAs(OutputType.FILE);
+		
 		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		
-		String path = System.getProperty("user.dir")+method+"_"+timeStamp;
+		String targetpath = System.getProperty("user.dir")+method+"_"+timeStamp;
 		
-		File target = new File(path);
-		
-		TakesScreenshot tc = (TakesScreenshot) driver;
-		
-		File source = tc.getScreenshotAs(OutputType.FILE);
+		File target = new File(targetpath);
 		
 		source.renameTo(target);
 		
-		return path;	
+		return targetpath;	
 	}
 	
 }
