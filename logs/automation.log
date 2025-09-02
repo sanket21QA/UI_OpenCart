@@ -1,0 +1,110 @@
+2025-09-02 12:44:58 INFO  Utils:112 - [TestNG] Running:
+  D:\Study\DATA\Testing\eclipse\UI_OpenCart\master.xml
+
+2025-09-02 12:45:06 INFO  TC001_AccountRegistrationTest:15 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-09-02 12:45:06 INFO  TC001_AccountRegistrationTest:21 - Clicked on MyAccount Link.. 
+2025-09-02 12:45:08 INFO  TC001_AccountRegistrationTest:24 - Clicked on Register Link.. 
+2025-09-02 12:45:08 INFO  TC001_AccountRegistrationTest:28 - Providing customer details...
+2025-09-02 12:45:11 INFO  TC001_AccountRegistrationTest:42 - Validating expected message..
+2025-09-02 12:45:12 INFO  TC001_AccountRegistrationTest:47 - Test passed
+2025-09-02 12:45:12 INFO  TC001_AccountRegistrationTest:56 - ***** Finished TC001_AccountRegistrationTest *****
+2025-09-02 12:45:16 INFO  TC002_LoginTest:16 - ****** Startign TC_002_LoginTest *****
+2025-09-02 12:45:18 INFO  TC002_LoginTest:43 - ****** Finished TC_002_LoginTest *****
+2025-09-02 13:13:17 INFO  Utils:112 - [TestNG] Running:
+  D:\Study\DATA\Testing\eclipse\UI_OpenCart\master.xml
+
+2025-09-02 13:13:22 INFO  TC001_AccountRegistrationTest:15 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-09-02 13:13:22 INFO  TC001_AccountRegistrationTest:21 - Clicked on MyAccount Link.. 
+2025-09-02 13:13:22 INFO  TC001_AccountRegistrationTest:24 - Clicked on Register Link.. 
+2025-09-02 13:13:22 INFO  TC001_AccountRegistrationTest:28 - Providing customer details...
+2025-09-02 13:13:23 INFO  TC001_AccountRegistrationTest:42 - Validating expected message..
+2025-09-02 13:13:24 INFO  TC001_AccountRegistrationTest:47 - Test passed
+2025-09-02 13:13:24 INFO  TC001_AccountRegistrationTest:56 - ***** Finished TC001_AccountRegistrationTest *****
+2025-09-02 13:13:28 INFO  TC002_LoginTest:16 - ****** Startign TC_002_LoginTest *****
+2025-09-02 13:20:45 INFO  Utils:112 - [TestNG] Running:
+  D:\Study\DATA\Testing\eclipse\UI_OpenCart\master.xml
+
+2025-09-02 13:20:51 INFO  TC001_AccountRegistrationTest:15 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-09-02 13:20:51 INFO  TC001_AccountRegistrationTest:21 - Clicked on MyAccount Link.. 
+2025-09-02 13:20:52 INFO  TC001_AccountRegistrationTest:24 - Clicked on Register Link.. 
+2025-09-02 13:20:52 INFO  TC001_AccountRegistrationTest:28 - Providing customer details...
+2025-09-02 13:20:54 INFO  TC001_AccountRegistrationTest:42 - Validating expected message..
+2025-09-02 13:20:54 INFO  TC001_AccountRegistrationTest:47 - Test passed
+2025-09-02 13:20:54 INFO  TC001_AccountRegistrationTest:56 - ***** Finished TC001_AccountRegistrationTest *****
+2025-09-02 13:20:58 INFO  TC002_LoginTest:16 - ****** Startign TC_002_LoginTest *****
+2025-09-02 13:23:24 INFO  Utils:112 - [TestNG] Running:
+  D:\Study\DATA\Testing\eclipse\UI_OpenCart\master.xml
+
+2025-09-02 13:23:28 INFO  TC001_AccountRegistrationTest:15 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-09-02 13:23:28 INFO  TC001_AccountRegistrationTest:21 - Clicked on MyAccount Link.. 
+2025-09-02 13:23:29 INFO  TC001_AccountRegistrationTest:24 - Clicked on Register Link.. 
+2025-09-02 13:23:29 INFO  TC001_AccountRegistrationTest:28 - Providing customer details...
+2025-09-02 13:23:31 INFO  TC001_AccountRegistrationTest:42 - Validating expected message..
+2025-09-02 13:23:31 INFO  TC001_AccountRegistrationTest:47 - Test passed
+2025-09-02 13:23:31 INFO  TC001_AccountRegistrationTest:56 - ***** Finished TC001_AccountRegistrationTest *****
+2025-09-02 13:23:34 INFO  TC002_LoginTest:16 - ****** Startign TC_002_LoginTest *****
+2025-09-02 13:29:57 INFO  Utils:112 - [TestNG] Running:
+  D:\Study\DATA\Testing\eclipse\UI_OpenCart\master.xml
+
+2025-09-02 13:30:01 INFO  TC001_AccountRegistrationTest:15 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-09-02 13:30:01 INFO  TC001_AccountRegistrationTest:21 - Clicked on MyAccount Link.. 
+2025-09-02 13:30:01 INFO  TC001_AccountRegistrationTest:24 - Clicked on Register Link.. 
+2025-09-02 13:30:01 INFO  TC001_AccountRegistrationTest:28 - Providing customer details...
+2025-09-02 13:30:04 INFO  TC001_AccountRegistrationTest:42 - Validating expected message..
+2025-09-02 13:30:04 INFO  TC001_AccountRegistrationTest:47 - Test passed
+2025-09-02 13:30:04 INFO  TC001_AccountRegistrationTest:56 - ***** Finished TC001_AccountRegistrationTest *****
+2025-09-02 13:30:09 INFO  TC002_LoginTest:16 - ****** Startign TC_002_LoginTest *****
+2025-09-02 13:32:27 INFO  Utils:112 - [TestNG] Running:
+  D:\Study\DATA\Testing\eclipse\UI_OpenCart\master.xml
+
+2025-09-02 13:32:31 INFO  TC001_AccountRegistrationTest:15 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-09-02 13:32:31 INFO  TC001_AccountRegistrationTest:21 - Clicked on MyAccount Link.. 
+2025-09-02 13:32:32 INFO  TC001_AccountRegistrationTest:24 - Clicked on Register Link.. 
+2025-09-02 13:32:32 INFO  TC001_AccountRegistrationTest:28 - Providing customer details...
+2025-09-02 13:32:34 INFO  TC001_AccountRegistrationTest:42 - Validating expected message..
+2025-09-02 13:32:34 INFO  TC001_AccountRegistrationTest:47 - Test passed
+2025-09-02 13:32:34 INFO  TC001_AccountRegistrationTest:56 - ***** Finished TC001_AccountRegistrationTest *****
+2025-09-02 13:32:38 INFO  TC002_LoginTest:16 - ****** Startign TC_002_LoginTest *****
+2025-09-02 13:38:14 INFO  Utils:112 - [TestNG] Running:
+  D:\Study\DATA\Testing\eclipse\UI_OpenCart\master.xml
+
+2025-09-02 13:38:19 INFO  TC001_AccountRegistrationTest:15 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-09-02 13:38:19 INFO  TC001_AccountRegistrationTest:21 - Clicked on MyAccount Link.. 
+2025-09-02 13:38:19 INFO  TC001_AccountRegistrationTest:24 - Clicked on Register Link.. 
+2025-09-02 13:38:19 INFO  TC001_AccountRegistrationTest:28 - Providing customer details...
+2025-09-02 13:38:20 INFO  TC001_AccountRegistrationTest:42 - Validating expected message..
+2025-09-02 13:38:21 INFO  TC001_AccountRegistrationTest:47 - Test passed
+2025-09-02 13:38:21 INFO  TC001_AccountRegistrationTest:56 - ***** Finished TC001_AccountRegistrationTest *****
+2025-09-02 13:40:57 INFO  Utils:112 - [TestNG] Running:
+  D:\Study\DATA\Testing\eclipse\UI_OpenCart\master.xml
+
+2025-09-02 13:41:01 INFO  TC001_AccountRegistrationTest:15 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-09-02 13:41:01 INFO  TC001_AccountRegistrationTest:21 - Clicked on MyAccount Link.. 
+2025-09-02 13:41:02 INFO  TC001_AccountRegistrationTest:24 - Clicked on Register Link.. 
+2025-09-02 13:41:02 INFO  TC001_AccountRegistrationTest:28 - Providing customer details...
+2025-09-02 13:41:04 INFO  TC001_AccountRegistrationTest:42 - Validating expected message..
+2025-09-02 13:41:04 INFO  TC001_AccountRegistrationTest:47 - Test passed
+2025-09-02 13:41:04 INFO  TC001_AccountRegistrationTest:56 - ***** Finished TC001_AccountRegistrationTest *****
+2025-09-02 13:43:00 INFO  Utils:112 - [TestNG] Running:
+  D:\Study\DATA\Testing\eclipse\UI_OpenCart\master.xml
+
+2025-09-02 13:43:04 INFO  TC001_AccountRegistrationTest:15 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-09-02 13:43:04 INFO  TC001_AccountRegistrationTest:21 - Clicked on MyAccount Link.. 
+2025-09-02 13:43:05 INFO  TC001_AccountRegistrationTest:24 - Clicked on Register Link.. 
+2025-09-02 13:43:05 INFO  TC001_AccountRegistrationTest:28 - Providing customer details...
+2025-09-02 13:43:08 INFO  TC001_AccountRegistrationTest:42 - Validating expected message..
+2025-09-02 13:43:08 INFO  TC001_AccountRegistrationTest:47 - Test passed
+2025-09-02 13:43:08 INFO  TC001_AccountRegistrationTest:56 - ***** Finished TC001_AccountRegistrationTest *****
+2025-09-02 13:43:11 INFO  TC002_LoginTest:16 - ****** Startign TC_002_LoginTest *****
+2025-09-02 13:46:06 INFO  Utils:112 - [TestNG] Running:
+  D:\Study\DATA\Testing\eclipse\UI_OpenCart\master.xml
+
+2025-09-02 13:46:12 INFO  TC001_AccountRegistrationTest:15 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-09-02 13:46:12 INFO  TC001_AccountRegistrationTest:21 - Clicked on MyAccount Link.. 
+2025-09-02 13:46:13 INFO  TC001_AccountRegistrationTest:24 - Clicked on Register Link.. 
+2025-09-02 13:46:13 INFO  TC001_AccountRegistrationTest:28 - Providing customer details...
+2025-09-02 13:46:15 INFO  TC001_AccountRegistrationTest:42 - Validating expected message..
+2025-09-02 13:46:15 INFO  TC001_AccountRegistrationTest:47 - Test passed
+2025-09-02 13:46:15 INFO  TC001_AccountRegistrationTest:56 - ***** Finished TC001_AccountRegistrationTest *****
+2025-09-02 13:46:19 INFO  TC002_LoginTest:16 - ****** Startign TC_002_LoginTest *****
+2025-09-02 13:46:21 INFO  TC002_LoginTest:43 - ****** Finished TC_002_LoginTest *****

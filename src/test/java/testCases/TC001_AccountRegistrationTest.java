@@ -26,12 +26,12 @@ public class TC001_AccountRegistrationTest extends BaseClass{
 		AccountRegistrationPage regpage=new AccountRegistrationPage(driver);
 		
 		logger.info("Providing customer details...");
-		regpage.setFirstName(Alpha().toUpperCase());
-		regpage.setLastName(Alpha().toUpperCase());
-		regpage.setEmail(Alpha()+"@gmail.com");// randomly generated the email
-		regpage.setTelephone(Numeric());
+		regpage.setFirstName(randomeString().toUpperCase());
+		regpage.setLastName(randomeString().toUpperCase());
+		regpage.setEmail(randomeString()+"@gmail.com");// randomly generated the email
+		regpage.setTelephone(randomeNumber());
 			
-		String password=Alphanumeric();
+		String password=randomeAlphaNumberic();
 			
 		regpage.setPassword(password);
 		regpage.setConfirmPassword(password);

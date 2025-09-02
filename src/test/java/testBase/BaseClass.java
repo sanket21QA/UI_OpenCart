@@ -5,12 +5,11 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
 
 import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
@@ -24,27 +23,33 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
+
+import org.apache.logging.log4j.LogManager;  //Log4j
+import org.apache.logging.log4j.Logger;  //Log4j
+
+
 public class BaseClass {
 
-	public static WebDriver driver;   // Interface
-	public Logger logger;			 // Interface
-	public Properties prop;			// class
+public static WebDriver driver;   // Interface
+public Logger logger;  //Log4j    // Interface
+public Properties p;			// class
 	
-	@BeforeClass(groups = {"Sanity","Regression","Master"})
+	@BeforeClass(groups= {"Sanity","Regression","Master"})
 	@Parameters({"os","browser"})
-	
-	public void setup(String os, String browser) throws IOException
+	public void setup(String os, String br) throws IOException
 	{
-		FileReader file = new FileReader("./src//test//resources//config.properties");
-		prop = new Properties();
-		prop.load(file);
-		
-		logger = LogManager.getLogger(this.getClass());
-		
-		if (prop.getProperty("execution").equalsIgnoreCase("remote"))
+		//Loading config.properties file
+		FileReader file=new FileReader("./src//test//resources//config.properties");
+		p=new Properties();
+		p.load(file);
+				
+		logger=LogManager.getLogger(this.getClass());  //lOG4J2
+				
+		if(p.getProperty("execution_env").equalsIgnoreCase("remote"))
 		{
-			DesiredCapabilities capabilities = new DesiredCapabilities();
+			DesiredCapabilities capabilities=new DesiredCapabilities();
 			
+			//os
 			if(os.equalsIgnoreCase("windows"))
 			{
 				capabilities.setPlatform(Platform.WIN11);
@@ -64,71 +69,82 @@ public class BaseClass {
 				return;
 			}
 			
-			switch(browser.toLowerCase())
+			//browser
+			switch(br.toLowerCase())
 			{
 			case "chrome": capabilities.setBrowserName("chrome"); break;
 			case "edge": capabilities.setBrowserName("MicrosoftEdge"); break;
 			case "firefox": capabilities.setBrowserName("firefox"); break;
-			default: System.out.println("browser not found"); return;
+			default: System.out.println("No matching browser"); return;
 			}
 			
-			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
-			
-			if(prop.getProperty("execution_env").equalsIgnoreCase("local"))
-			{
+			driver=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities);
+		}
+		
+				
+		if(p.getProperty("execution_env").equalsIgnoreCase("local"))
+		{
 
-				switch(browser.toLowerCase())
-				{
-				case "chrome" : driver=new ChromeDriver(); break;
-				case "edge" : driver=new EdgeDriver(); break;
-				case "firefox": driver=new FirefoxDriver(); break;
-				default : System.out.println("Invalid browser name.."); return;
-				}
-			}			
-		}				
+			switch(br.toLowerCase())
+			{
+			case "chrome" : driver=new ChromeDriver(); break;
+			case "edge" : driver=new EdgeDriver(); break;
+			case "firefox": driver=new FirefoxDriver(); break;
+			default : System.out.println("Invalid browser name.."); return;
+			}
+		}
+		
+			
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+		driver.get(p.getProperty("appURL2")); // reading url from properties file.
+		driver.manage().window().maximize();
 	}
 	
-	@AfterClass(groups = {"Sanity","Regression","Master"})
+	@AfterClass(groups= {"Sanity","Regression","Master"})
 	public void tearDown()
 	{
 		driver.quit();
 	}
 	
 	
-	public String Alpha()
+	
+	
+	public String randomeString()
 	{
-		String randomAplha = RandomStringUtils.randomAlphabetic(5);
-		return randomAplha;
+		String generatedstring=RandomStringUtils.randomAlphabetic(5);
+		return generatedstring;
 	}
 	
-	public String Numeric()
+	public String randomeNumber()
 	{
-		String randomAplha = RandomStringUtils.randomNumeric(5);
-		return randomAplha;
+		String generatednumber=RandomStringUtils.randomNumeric(10);
+		return generatednumber;
 	}
 	
-	public String Alphanumeric()
+	public String randomeAlphaNumberic()
 	{
-		String randomAplha = RandomStringUtils.randomAlphanumeric(5);
-		return randomAplha;
+		String generatedstring=RandomStringUtils.randomAlphabetic(3);
+		String generatednumber=RandomStringUtils.randomNumeric(3);
+		return (generatedstring+"@"+generatednumber);
 	}
 	
-	
-	public String captureScreen(String method) 
-	{
-		
-		TakesScreenshot tc = (TakesScreenshot) driver;
-		File source = tc.getScreenshotAs(OutputType.FILE);
-		
+	public String captureScreen(String tname) throws IOException {
+
 		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+				
+		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+		File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
 		
-		String targetpath = System.getProperty("user.dir")+method+"_"+timeStamp;
+		String targetFilePath=System.getProperty("user.dir")+"\\screenshots\\" + tname + "_" + timeStamp + ".png";
+		File targetFile=new File(targetFilePath);
 		
-		File target = new File(targetpath);
-		
-		source.renameTo(target);
-		
-		return targetpath;	
+		sourceFile.renameTo(targetFile);
+			
+		return targetFilePath;
+
 	}
+	
 	
 }
