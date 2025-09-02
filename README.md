@@ -6,7 +6,7 @@
 ## About Project
 This project is an automation framework built using Java, Selenium, TestNG, and integrated with Jenkins.
 
-![Framework](ProjectImage/Hybrid%20Automation%20framework.png)
+<img width="843" height="518" alt="image" src="https://github.com/user-attachments/assets/cb95d52a-a8a7-42bf-93be-9576fbc5f7af" />
 
 [![Java](https://img.shields.io/badge/Java-17-blue?logo=java)](https://www.oracle.com/java/)
 [![Selenium](https://img.shields.io/badge/Selenium-4.0-brightgreen?logo=selenium)](https://www.selenium.dev/)
