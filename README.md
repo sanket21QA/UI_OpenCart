@@ -72,16 +72,18 @@ The framework supports:
 ## 📊 Reports & Logs
 
 * **Extent Reports**
+  
   <img width="1435" height="386" alt="image" src="https://github.com/user-attachments/assets/b7e6c601-62f6-4fa6-9651-79eaf7dbb686" />
 
 * **Screenshots on Failure**
+  
   <img width="1238" height="696" alt="image" src="https://github.com/user-attachments/assets/a3830988-96d7-4e54-9e3d-5783f12dded5" />
 
 * **Log file**
+  
 <img width="1531" height="589" alt="image" src="https://github.com/user-attachments/assets/db28fb08-8704-4518-a414-b9c01a535c4b" />
  
 * **TestNG Reports**
-* 
 4. View execution & reports in Jenkins
 
   <img width="1634" height="739" alt="image" src="https://github.com/user-attachments/assets/7e7eb72e-e5a8-4959-89b3-ccd8375c4c18" />
